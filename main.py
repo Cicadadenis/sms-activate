@@ -31,9 +31,7 @@ storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
 
 
-@dp.message_handler()
-async def balle(message: types.Message):
-    await message.answer(message)
+
 
 @dp.message_handler(text='баланс')
 async def ballanse(message: types.Message):
